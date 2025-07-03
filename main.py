@@ -1,5 +1,5 @@
 from kesslergame import KesslerGame, Scenario, GamepadController, GraphicsType
-from controller_keyboard import MouseKeyboardController
+from controller_keyboard import KeyboardController
 
 def main():
     scenario = Scenario(
@@ -10,8 +10,8 @@ def main():
         stop_if_no_ammo=True     
     )
 
-    #need controller to play
-    controller = GamepadController()
+    #need controller to playz
+    controller = KeyboardController()
 
     game = KesslerGame(settings={
         "graphics_type": GraphicsType.Tkinter,  # change with pyplot if doesnt work
