@@ -5,13 +5,13 @@
 
 from enum import Enum
 from typing import Optional, Dict, List
-from .graphics_base import KesslerGraphics
-from ..scenario import Scenario
-from ..ship import Ship
-from ..asteroid import Asteroid
-from ..bullet import Bullet
-from ..mines import Mine
-from ..score import Score
+from graphics.graphics_base import KesslerGraphics
+from scenario import Scenario
+from ship import Ship
+from asteroid import Asteroid
+from bullet import Bullet
+from mines import Mine
+from score import Score
 
 class GraphicsType(Enum):
     NoGraphics = 0

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from .controller import KesslerController
+from controller import KesslerController
 from typing import Dict, NoReturn, Tuple, Any, Final
 from inputs import get_gamepad  # type: ignore[import-untyped]
 import math

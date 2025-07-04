@@ -1,4 +1,4 @@
-from kesslergame.controller import KesslerController
+from controller import KesslerController
 from typing import Dict, Tuple, Any
 from immutabledict import immutabledict
 import math

@@ -9,7 +9,7 @@ import math
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from .ship import Ship
+    from ship import Ship
 
 
 class Bullet:

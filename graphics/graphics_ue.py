@@ -7,13 +7,13 @@ import socket
 import numpy as np
 from typing import List
 
-from ..ship import Ship
-from ..asteroid import Asteroid
-from ..bullet import Bullet
-from ..mines import Mine
-from ..score import Score
-from ..scenario import Scenario
-from .graphics_base import KesslerGraphics
+from ship import Ship
+from asteroid import Asteroid
+from bullet import Bullet
+from mines import Mine
+from score import Score
+from scenario import Scenario
+from graphics.graphics_base import KesslerGraphics
 
 
 class GraphicsUE(KesslerGraphics):

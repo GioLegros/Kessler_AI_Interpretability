@@ -1,7 +1,7 @@
 from typing import List, Tuple, Dict, Any, Optional
 import random
-from .ship import Ship
-from .asteroid import Asteroid
+from ship import Ship
+from asteroid import Asteroid
 
 class Scenario:
     def __init__(self, name: str = "Unnamed", num_asteroids: int = 0, asteroid_states: Optional[List[Dict[str, Any]]] = None,

@@ -14,13 +14,13 @@ import scipy.ndimage as ndimage  # type: ignore[import-untyped]
 
 from typing import List, Optional
 
-from .graphics_base import KesslerGraphics
-from ..ship import Ship
-from ..asteroid import Asteroid
-from ..bullet import Bullet
-from ..mines import Mine
-from ..score import Score
-from ..scenario import Scenario
+from graphics.graphics_base import KesslerGraphics
+from ship import Ship
+from asteroid import Asteroid
+from bullet import Bullet
+from mines import Mine
+from score import Score
+from scenario import Scenario
 
 
 class GraphicsPLT(KesslerGraphics):

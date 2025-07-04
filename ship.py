@@ -8,9 +8,9 @@ import warnings
 import numpy as np
 from typing import Dict, Any, List, Tuple, Optional
 
-from .bullet import Bullet
-from .mines import Mine
-from .controller import KesslerController
+from bullet import Bullet
+from mines import Mine
+from controller import KesslerController
 
 
 class Ship:

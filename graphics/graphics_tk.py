@@ -8,14 +8,14 @@ from tkinter import Tk, Canvas, NW
 from PIL import Image, ImageTk  # type: ignore[import-untyped]
 
 from typing import Dict, Optional, List
-from .graphics_base import KesslerGraphics
-from ..ship import Ship
-from ..asteroid import Asteroid
-from ..bullet import Bullet
-from ..mines import Mine
-from ..score import Score
-from ..scenario import Scenario
-from ..team import Team
+from graphics.graphics_base import KesslerGraphics
+from ship import Ship
+from asteroid import Asteroid
+from bullet import Bullet
+from mines import Mine
+from score import Score
+from scenario import Scenario
+from team import Team
 
 
 class GraphicsTK(KesslerGraphics):

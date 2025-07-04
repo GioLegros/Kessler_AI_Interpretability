@@ -3,14 +3,15 @@
 # NOTICE: This file is subject to the license agreement defined in file 'LICENSE', which is part of
 # this source code package.
 
-from .ship import Ship
-from .kessler_game import KesslerGame, TrainerEnvironment
-from .controller import KesslerController
-from .controller_gamepad import GamepadController
-from .scenario import Scenario
-from .score import Score
-from .graphics import GraphicsType, KesslerGraphics
-from ._version import __version__
+from ship import Ship
+from kessler_game import KesslerGame, TrainerEnvironment
+from controller import KesslerController
+from controller_gamepad import GamepadController
+from scenario import Scenario
+from score import Score
+from graphics.graphics_handler import GraphicsType
+from graphics.graphics_base import  KesslerGraphics
+from _version import __version__
 
 
 __all__ = ['KesslerGame', 'TrainerEnvironment', 'KesslerController', 'Scenario', 'Score', 'GraphicsType',

@@ -11,16 +11,16 @@ from enum import Enum
 from collections import OrderedDict
 from immutabledict import immutabledict
 
-from .scenario import Scenario
-from .score import Score
-from .controller import KesslerController
-from .collisions import circle_line_collision
-from .graphics import GraphicsType, GraphicsHandler
-from .mines import Mine
-from .asteroid import Asteroid
-from .ship import Ship
-from .bullet import Bullet
-from .graphics import KesslerGraphics
+from scenario import Scenario
+from score import Score
+from controller import KesslerController
+from collisions import circle_line_collision
+from graphics.graphics_handler import GraphicsType, GraphicsHandler
+from graphics.graphics_base import KesslerGraphics
+from mines import Mine
+from asteroid import Asteroid
+from ship import Ship
+from bullet import Bullet
 
 
 class StopReason(Enum):
@@ -111,6 +111,8 @@ class KesslerGame:
         new_asteroids: list[Asteroid] = []
         while stop_reason == StopReason.not_stopped:
 
+            
+
             # Get perf time at the start of time step evaluation and initialize performance tracker
             step_start = time.perf_counter()
             perf_dict: PerfDict = {}
@@ -145,8 +147,8 @@ class KesslerGame:
                     ship.turn_rate = 0.0
                     ship.fire = False
                     # Evaluate each controller letting control be applied
-                    if controllers[idx].ship_id != ship.id:
-                        raise RuntimeError("Controller and ship ID do not match")
+                    # if controllers[idx].ship_id != ship.id:
+                    #     raise RuntimeError("Controller and ship ID do not match")
                     ship.thrust, ship.turn_rate, ship.fire, ship.drop_mine = controllers[idx].actions(ship.ownstate, game_state)
 
                 # Update controller evaluation time if performance tracking

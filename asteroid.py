@@ -8,9 +8,9 @@ import random
 import math
 
 if TYPE_CHECKING:
-    from .ship import Ship
-    from .bullet import Bullet
-from .mines import Mine
+    from ship import Ship
+    from bullet import Bullet
+from mines import Mine
 
 class Asteroid:
     """ Sprite that represents an asteroid. """

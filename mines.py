@@ -6,8 +6,8 @@
 from typing import List, Tuple, Dict, Any, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from .ship import Ship
-    from .asteroid import Asteroid
+    from ship import Ship
+    from asteroid import Asteroid
 
 
 class Mine:

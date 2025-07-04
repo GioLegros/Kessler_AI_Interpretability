@@ -8,12 +8,12 @@ from tkinter import *
 from typing import List
 #from PIL import Image, ImageTk  # type: ignore[import-untyped]
 
-from ..ship import Ship
-from ..asteroid import Asteroid
-from ..bullet import Bullet
-from ..mines import Mine
-from ..score import Score
-from ..scenario import Scenario
+from ship import Ship
+from asteroid import Asteroid
+from bullet import Bullet
+from mines import Mine
+from score import Score
+from scenario import Scenario
 
 
 class KesslerGraphics:
