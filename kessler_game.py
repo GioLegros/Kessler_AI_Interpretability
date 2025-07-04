@@ -109,10 +109,21 @@ class KesslerGame:
         asteroid_remove_idxs: set[int] = set()
         mine_remove_idxs: list[int] = []
         new_asteroids: list[Asteroid] = []
+        previous_time = time.time()
+        obj_time = 3
+        Atime = 0
         while stop_reason == StopReason.not_stopped:
 
             #idée : faire un delta temps pour les secondes et appeler un thread qui va executer le clacul du choix des ia et reatribute les comportement
             # --- INITIALIZE TIME STEP --------------------------------------------------------------------------------
+            current_time = time.time()
+            delta_time = current_time - previous_time
+            previous_time = current_time
+            Atime += delta_time
+            
+            if Atime > obj_time:
+                Atime = 0
+                print("salut mon pote")
 
             # Get perf time at the start of time step evaluation and initialize performance tracker
             step_start = time.perf_counter()
