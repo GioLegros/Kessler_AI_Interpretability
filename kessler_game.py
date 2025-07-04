@@ -111,7 +111,8 @@ class KesslerGame:
         new_asteroids: list[Asteroid] = []
         while stop_reason == StopReason.not_stopped:
 
-            
+            #idée : faire un delta temps pour les secondes et appeler un thread qui va executer le clacul du choix des ia et reatribute les comportement
+            # --- INITIALIZE TIME STEP --------------------------------------------------------------------------------
 
             # Get perf time at the start of time step evaluation and initialize performance tracker
             step_start = time.perf_counter()

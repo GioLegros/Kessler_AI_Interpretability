@@ -30,8 +30,8 @@ def main():
     })
 
     #idée, faire un diagramme visiteur avec un head master, regarde les vesseaux et les asteroide et use une fonction update
-    #dans le controleur qui aura le code des deux ia et qui switche entre les deux
-    
+    #dans le controleur qui aura le code des deux ia et qui switche entre les deuxq
+
     # Game lauch with 1 controller
     game.run(scenario, [keyboardController,keyboardController,keyboardController,keyboardController,keyboardController,
                         keyboardController,keyboardController,keyboardController,keyboardController,keyboardController])
